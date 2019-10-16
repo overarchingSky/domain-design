@@ -1,4 +1,3 @@
 export enum Content_Type {
-    JSON = 'application/json'
+  JSON = "application/json"
 }
-

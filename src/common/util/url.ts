@@ -18,7 +18,7 @@ namespace urlUtils {
    */
   export function getParams(url: string): obj {
     let obj: obj = {};
-    let paramsStr = url.replace(/[^\?]*\??([^#]*)(#.*)?/, "$1");
+    let paramsStr = url.replace(/[^?]*\??([^#]*)(#.*)?/, "$1");
     paramsStr &&
       paramsStr.split("&").forEach((item: string) => {
         let splited = item.split("=");

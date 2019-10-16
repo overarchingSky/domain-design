@@ -1,3 +1,3 @@
-declare type obj ={
-    [key:string]:any
-}
+declare type obj = {
+  [key: string]: any;
+};

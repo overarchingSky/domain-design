@@ -15,14 +15,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test": "yarn test:unit",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
-    "//": "发布版本",
     "commit": "cross-env allowGitCommit=true git commit -m ''",
+    "//": "发布版本",
     "release": "cross-env noVerifyHook=true standard-version",
-    "coverage": "yarn test -- --coverage && open-cli coverage/index.html",
-    "test": "jest "
+    "coverage": "yarn test:unit  --coverage && open-cli coverage/lcov-report/index.html"
   },
   "husky": {
     "hooks": {
@@ -64,13 +64,14 @@
     "husky": "^3.0.9",
     "lint-staged": "^9.3.0",
     "minimist": "^1.2.0",
+    "open-cli": "^5.0.0",
     "prettier": "^1.18.2",
     "standard-changelog": "^2.0.13",
     "standard-version": "^7.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "ts-jest": "^23.0.0",
-    "typescript": "^3.4.3",
+    "typescript": "~3.5.1",
     "vue-template-compiler": "^2.6.10"
   }
 }

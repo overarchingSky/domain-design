@@ -1,9 +1,7 @@
-import Vue from 'vue'
+import Vue from "vue";
 
-export const prototype:obj = {
-
-}
+export const prototype: obj = {};
 
 Object.keys(prototype).map(key => {
-    Vue.prototype[key] = prototype[key]
-})
+  Vue.prototype[key] = prototype[key];
+});
