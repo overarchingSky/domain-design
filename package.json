@@ -22,6 +22,7 @@
     "commit": "cross-env allowGitCommit=true git commit -m ''",
     "//": "发布版本",
     "release": "cross-env noVerifyHook=true standard-version",
+    "//":"生成覆盖率报告，并预览",
     "coverage": "yarn test:unit  --coverage && open-cli coverage/lcov-report/index.html"
   },
   "husky": {
