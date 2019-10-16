@@ -24,7 +24,12 @@
     "coverage": "yarn test -- --coverage && open-cli coverage/index.html",
     "test": "jest "
   },
-  
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --config ./.lintstagedrc",
+      "prepare-commit-msg": "node ./script/prepare-commit-msg.js"
+    }
+  },
   "dependencies": {
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
@@ -32,19 +37,6 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "standard-version": "^7.0.0",
-    "fs-extra": "^8.1.0",
-    "handlebars": "^4.4.2",
-    "handlebars-generator": "^3.2.3",
-    "husky": "^3.0.5",
-    "lint-staged": "^9.3.0",
-    "standard-changelog": "^2.0.13",
-    "minimist": "^1.2.0",
-    "dotenv": "^8.1.0",
-    "dotenv-expand": "^5.1.0",
-    "chalk": "^2.4.2",
-    "conventional-changelog-cli": "^2.0.23",
-    "cz-conventional-changelog": "^3.0.2",
     "@types/jest": "^23.1.4",
     "@vue/cli-plugin-babel": "^3.12.0",
     "@vue/cli-plugin-e2e-cypress": "^3.12.0",
@@ -57,10 +49,23 @@
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
+    "chalk": "^2.4.2",
+    "conventional-changelog-cli": "^2.0.23",
+    "cz-conventional-changelog": "^3.0.2",
+    "dotenv": "^8.1.0",
+    "dotenv-expand": "^5.1.0",
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-vue": "^5.0.0",
+    "fs-extra": "^8.1.0",
+    "handlebars": "^4.4.2",
+    "handlebars-generator": "^3.2.3",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.3.0",
+    "minimist": "^1.2.0",
     "prettier": "^1.18.2",
+    "standard-changelog": "^2.0.13",
+    "standard-version": "^7.0.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "ts-jest": "^23.0.0",
