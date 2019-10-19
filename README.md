@@ -2,32 +2,32 @@
 
 ## Project setup
 ```
-npm install
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
+yarn build
 ```
 
 ### Run your unit tests
 ```
-npm run test:unit
+yarn test:unit
 ```
 
 ### Run your end-to-end tests
 ```
-npm run test:e2e
+yarn test:e2e
 ```
 
 ### Lints and fixes files
 ```
-npm run lint
+yarn lint
 ```
 
 ### Customize configuration
@@ -41,6 +41,7 @@ ci功能：
 - 测试覆盖率以及报告https://www.kancloud.cn/sllyli/npm-script/1243454 nyc
 - 拓展脚手架，添加自定义命令，生成模板，生成业务模块
 - 使用e2e和unit做测试
+- 使用本地自定义eslint规则，检查领域事件注册代码格式
 
 模板feature
 - 封装通用的request模块

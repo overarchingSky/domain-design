@@ -7,7 +7,8 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off",
-    "no-inner-declarations": "off"
+    "no-inner-declarations": "off",
+    "domain-event-declare-unqualify": 1
   },
   parserOptions: {
     parser: "@typescript-eslint/parser"
