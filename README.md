@@ -51,6 +51,7 @@ ci功能：
 todo：
 - 支持失效时间的localStorage，支持手动失效的localStorage（失效时间从后端取）
 - 添加Auth模块，提供统一的多端登录以及获取用户信息类
+- codecov优化代码review流程
 
 
 <!-- HUSKY_SKIP_HOOKS
