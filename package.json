@@ -64,7 +64,7 @@
     "handlebars-generator": "^3.2.3",
     "husky": "^3.0.9",
     "lint-staged": "^9.3.0",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.2",
     "open-cli": "^5.0.0",
     "prettier": "^1.18.2",
     "standard-changelog": "^2.0.13",
